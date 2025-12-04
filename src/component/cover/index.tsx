@@ -1,3 +1,10 @@
+<div className="card cover-card">
+  <div className="cover">
+    ...
+  </div>
+</div>
+
+
 import {
   BRIDE_FULLNAME,
   GROOM_FULLNAME,
