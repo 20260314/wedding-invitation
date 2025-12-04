@@ -122,8 +122,8 @@ body {
     .card-group {
       position: relative;
       @media (width > 980px) {
-        display: flex;
-        flex-direction: row;
+        display: block;
+        flex-direction: column;
         box-shadow: none;
         margin: 0;
         background-color: var(--light-color);
