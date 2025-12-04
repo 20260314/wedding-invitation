@@ -18,3 +18,26 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "TsarR";
+  src: url("./fonts/tsarR.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaslonCP";
+  src: url("./fonts/CaslonCP.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Glamore";
+  src: url("./fonts/Glamore.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
