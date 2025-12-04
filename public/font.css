@@ -13,8 +13,8 @@
 }
 
 @font-face {
-  font-family: "Tsar-a";
-  src: url("./tsar-a.otf") format("opentype");
+  font-family: "Tsar";
+  src: url("./tsar.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
