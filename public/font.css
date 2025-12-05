@@ -40,4 +40,9 @@
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: "PretendardR";
+  src: url("./fonts/Pretendard_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
