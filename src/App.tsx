@@ -12,44 +12,40 @@ import { STATIC_ONLY } from "./env"
 function App() {
   return (
         <div className="background">
-      <div className="card-group cover-full">
-        <LazyDiv className="card">
+      <div className="card-view">
+        <LazyDiv className="card-group cover-full">
           {/* 표지 */}
           <Cover />
-             </LazyDiv>
-
-          <LazyDiv className="card">
+          </LazyDiv>
+        
+<LazyDiv className="card-group">
           {/* 모시는 글 */}
           <Invitation />
         </LazyDiv>
-      </div>
 
-      <div className="card-group">
-        <LazyDiv className="card">
+        <LazyDiv className="card-group">
           {/* 결혼식 날짜 (달력) */}
           <Calendar />
-             </LazyDiv>
-
-          <LazyDiv className="card"> 
+          </LazyDiv>
+        
+ <LazyDiv className="card-group">
           {/* 겔러리 */}
           <Gallery />
         </LazyDiv>
-       </div>
 
-       <div className="card-group">
-        <LazyDiv className="card">
+        <LazyDiv className="card-group">
           {/* 오시는길 */}
           <Location />
         </LazyDiv>
 
-        <LazyDiv className="card">
+        <LazyDiv className="card-group">
           {/* 마음 전하기 */}
           <Information />
         </LazyDiv>
-      </div>
 
         <ShareButton />
       </div>
+    </div>
   )
 }
 
