@@ -42,8 +42,9 @@ function App() {
           {/* 마음 전하기 */}
           <Information />
         </LazyDiv>
-
+<LazyDiv className="card-group">
         <ShareButton />
+   </LazyDiv>
       </div>
     </div>
   )
