@@ -12,7 +12,11 @@ export const LazyDiv = (props: HTMLAttributes<HTMLDivElement>) => {
           observer.unobserve(entry.target)
         }
       })
-    })
+    },
+   {
+      rootMargin: "-40% 0px -40% 0px", // 진입을 더 깊게 해야 발동됨
+    }                                                                                                             
+ )
     observer.observe(divElement)
 
     return () => observer.unobserve(divElement)
