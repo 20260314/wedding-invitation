@@ -16,7 +16,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const ShareButton = () => {
   const kakao = useKakao()
   return (
-    <LazyDiv className="footer share-button">
+    <div className="footer share-button">
       <button
         className="ktalk-share"
         onClick={() => {
@@ -73,6 +73,6 @@ export const ShareButton = () => {
       >
         <img src={ktalkIcon} alt="ktalk-icon" /> 카카오톡으로 공유하기
       </button>
-    </LazyDiv>
+    </div>
   )
 }
