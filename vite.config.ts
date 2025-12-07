@@ -15,7 +15,7 @@ import {
 
 const distFolder = "build"
 
-//let base = "/"
+let base = "/"
 
 //try {
 //  const url = new URL(pkg.homepage)
@@ -23,7 +23,7 @@ const distFolder = "build"
 //} catch (e) {
 //  base = pkg.homepage || "/"
 //}
- let base: "/wedding-invitation/"
+ //let base: "/wedding-invitation/"
 
 // https://vite.dev/config/
 export default defineConfig({
