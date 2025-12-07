@@ -17,13 +17,13 @@ const distFolder = "build"
 
 let base = "/"
 
-//try {
-//  const url = new URL(pkg.homepage)
-//  base = url.pathname
-//} catch (e) {
-//  base = pkg.homepage || "/"
-//}
- //let base: "/wedding-invitation/"
+try {
+  const url = new URL(pkg.homepage)
+  base = url.pathname
+} catch (e) {
+  base = pkg.homepage || "/"
+}
+let base: "/wedding-invitation/"
 
 // https://vite.dev/config/
 export default defineConfig({
