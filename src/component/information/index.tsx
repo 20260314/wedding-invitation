@@ -9,6 +9,7 @@ export const Information1 = () => {
   return (
     <>
       <h2 className="english">Notice</h2>
+      <p className="title-kr">안내사항</p>
       <div className="info-card">
         <div className="label">식사 안내</div>
         <div className="content">
