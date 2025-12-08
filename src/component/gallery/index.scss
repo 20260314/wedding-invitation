@@ -160,7 +160,7 @@ $transition-duration: 0.3s;
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.15rem;
+    gap: 0.1rem; //사진 간격 흰색테두리
 
     .thumb {
       width: 100%;
@@ -189,7 +189,7 @@ $transition-duration: 0.3s;
 
     .fade {
       position: absolute;
-      top: 0;
+      top: -2rem;
       left: 0;
       width: 100%;
       height: 3rem;
