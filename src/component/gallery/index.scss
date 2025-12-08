@@ -197,7 +197,6 @@ $transition-duration: 0.3s;
         to bottom,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 1) 100%
-        pointer-events: none; //클릭막힘 방지
       );
     }
 
