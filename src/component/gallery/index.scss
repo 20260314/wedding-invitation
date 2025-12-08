@@ -161,6 +161,7 @@ $transition-duration: 0.3s;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.1rem; //사진 간격 흰색테두리
+    margin-top: 2rem;
 
     .thumb {
       width: 100%;
