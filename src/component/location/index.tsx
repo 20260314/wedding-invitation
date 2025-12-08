@@ -32,7 +32,9 @@ export const Location = () => {
             <b>택시</b>를 이용해 방문해주시기를 부탁드립니다.
             <br />
           </div>
+        </div>
 
+               <div classname="location-info">
           <div className="content">
             <div className="heading">자가용</div>
             <b>경기도 안성시 공도읍 신두만곡로 101</b>
