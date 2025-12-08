@@ -2,7 +2,7 @@ import { useState } from "react"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
 import { GALLERY_IMAGES } from "../../images"
-import { Arrowdown } from "../../icons/arrowdown.png"
+import  Arrowdown  from "../../icons/arrowdown.png"
 
 export const Gallery = () => {
   const { openModal, closeModal } = useModal()
