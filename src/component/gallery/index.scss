@@ -153,3 +153,78 @@ $transition-duration: 0.3s;
     flex-direction: column;
   }
 }
+
+
+.instagram-gallery {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+
+    .thumb {
+      width: 100%;
+      padding-top: 100%; 
+      position: relative;
+      cursor: pointer;
+
+      img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+
+  .more-wrapper {
+    position: relative;
+    margin-top: -3rem;
+    padding-top: 3.5rem;
+    text-align: center;
+
+    .fade {
+      position: absolute;
+      top: -3.5rem;
+      left: 0;
+      width: 100%;
+      height: 3.5rem;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+
+    .more-btn {
+      padding: 0.5rem 0;
+      background: none;
+      border: none;
+      color: var(--dark-color);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .less-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--dark-color);
+    cursor: pointer;
+  }
+}
+
+/* 모달 내부 큰 이미지 보기 */
+.photo-view-modal {
+  .photo-view {
+    width: 22rem;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+}
