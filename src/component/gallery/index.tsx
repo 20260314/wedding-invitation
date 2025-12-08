@@ -2,6 +2,7 @@ import { useState } from "react"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
 import { GALLERY_IMAGES } from "../../images"
+import { Arrowdown } from "../../icons/arrowdown.png"
 
 export const Gallery = () => {
   const { openModal, closeModal } = useModal()
@@ -41,7 +42,7 @@ export const Gallery = () => {
         <div className="more-wrapper">
           <div className="fade" />
           <button className="more-btn" onClick={() => setExpanded(true)}>
-            더보기 ⌄
+            더보기 <img src={Arrowdown} alt="더보기" className="more-arrow" />
           </button>
         </div>
       )}
