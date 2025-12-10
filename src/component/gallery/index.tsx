@@ -1,43 +1,52 @@
 import { useState } from "react"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
-import { Button } from "../button"
 import ArrowLeft from "../../icons/angle-left-sm.svg?react"
 import { GALLERY_IMAGES } from "../../images"
-import  Arrowdown  from "../../icons/arrowdown.png"
+import Arrowdown from "../../icons/arrowdown.png"
 
 export const Gallery = () => {
-  const { openModal, closeModal } = useModal()
+  const { openModal } = useModal()
   const [expanded, setExpanded] = useState(false)
 
-  const visibleCount = expanded ? GALLERY_IMAGES.length : 9 // 3열 × 4행 = 12개
+  const visibleCount = expanded ? GALLERY_IMAGES.length : 9
 
-  
+  // -- 큰 사진 보여주는 컴포넌트 --
+  const PhotoViewer = ({ startIndex }) => {
+    const [index, setIndex] = useState(startIndex)
+
+    const prev = (e) => {
+      e.stopPropagation()
+      setIndex((i) => (i === 0 ? GALLERY_IMAGES.length - 1 : i - 1))
+    }
+
+    const next = (e) => {
+      e.stopPropagation()
+      setIndex((i) => (i === GALLERY_IMAGES.length - 1 ? 0 : i + 1))
+    }
+
+    return (
+      <div className="photo-view" style={{ position: "relative" }}>
+        {/* --- 좌측 버튼 --- */}
+        <button className="slide-btn left" onClick={prev}>
+          <ArrowLeft className="arrow" />
+        </button>
+
+        {/* --- 큰 사진 --- */}
+        <img src={GALLERY_IMAGES[index]} className="photo-large" draggable={false} />
+
+        {/* --- 우측 버튼 (좌우 반전) --- */}
+        <button className="slide-btn right" onClick={next}>
+          <ArrowLeft className="arrow right" />
+        </button>
+      </div>
+    )
+  }
+
   return (
     <LazyDiv className="card gallery instagram-gallery">
-
-      <div className="nav-buttons">
-  <button
-    onMouseDown={() => {
-      if (statusRef.current === "stationary") setClickMove("left")
-    }}
-  >
-    <ArrowLeft className="arrow" />
-  </button>
-
-  <button
-    onMouseDown={() => {
-      if (statusRef.current === "stationary") setClickMove("right")
-    }}
-  >
-    <ArrowLeft className="arrow right" />
-  </button>
-</div>
- 
       <h2 className="english">Gallery</h2>
-<p className="title-kr">갤러리</p>
-
-
+      <p className="title-kr">갤러리</p>
 
       {/* --- thumbnail grid --- */}
       <div className={`grid ${expanded ? "expanded" : ""}`}>
@@ -49,11 +58,7 @@ export const Gallery = () => {
               openModal({
                 className: "photo-view-modal",
                 closeOnClickBackground: true,
-                content: (
-                  <div className="photo-view">
-                    <img src={img} alt={`${idx}`} />
-                  </div>
-                ),
+                content: <PhotoViewer startIndex={idx} />,
               })
             }
           >
@@ -62,7 +67,7 @@ export const Gallery = () => {
         ))}
       </div>
 
-      {/* Gradient + more button */}
+      {/* --- 더보기 --- */}
       {!expanded && GALLERY_IMAGES.length > 9 && (
         <div className="more-wrapper">
           <div className="fade" />
@@ -72,7 +77,7 @@ export const Gallery = () => {
         </div>
       )}
 
-      {/* collapse button (optional) */}
+      {/* --- 접기 --- */}
       {expanded && (
         <button className="less-btn" onClick={() => setExpanded(false)}>
           접기 ↑
