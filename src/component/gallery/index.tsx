@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
+import { Button } from "../button"
+import ArrowLeft from "../../icons/angle-left-sm.svg?react"
 import { GALLERY_IMAGES } from "../../images"
 import  Arrowdown  from "../../icons/arrowdown.png"
 
@@ -10,10 +12,33 @@ export const Gallery = () => {
 
   const visibleCount = expanded ? GALLERY_IMAGES.length : 9 // 3열 × 4행 = 12개
 
+  
   return (
     <LazyDiv className="card gallery instagram-gallery">
       <h2 className="english">Gallery</h2>
 <p className="title-kr">갤러리</p>
+
+      //지피티가 준 좌우 아이콘부분
+      <div className="nav-buttons">
+  <button
+    onMouseDown={() => {
+      if (statusRef.current === "stationary") setClickMove("left")
+    }}
+  >
+    <ArrowLeft className="arrow" />
+  </button>
+
+  <button
+    onMouseDown={() => {
+      if (statusRef.current === "stationary") setClickMove("right")
+    }}
+  >
+    <ArrowLeft className="arrow right" />
+  </button>
+</div>
+      //지피티가 준거 여기까지
+
+
 
       {/* --- thumbnail grid --- */}
       <div className={`grid ${expanded ? "expanded" : ""}`}>
