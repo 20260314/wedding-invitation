@@ -327,7 +327,7 @@ $transition-duration: 0.3s;
 .photo-large {
   max-width: 100%;
   max-height: 80vh;
-  border-radius: 10px;
+  border-radius: 10px; //코너 라운드처리
 }
 
 .slide-btn {
