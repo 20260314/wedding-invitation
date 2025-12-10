@@ -15,10 +15,7 @@ export const Gallery = () => {
   
   return (
     <LazyDiv className="card gallery instagram-gallery">
-      <h2 className="english">Gallery</h2>
-<p className="title-kr">갤러리</p>
 
-      //지피티가 준 좌우 아이콘부분
       <div className="nav-buttons">
   <button
     onMouseDown={() => {
@@ -36,7 +33,9 @@ export const Gallery = () => {
     <ArrowLeft className="arrow right" />
   </button>
 </div>
-      //지피티가 준거 여기까지
+ 
+      <h2 className="english">Gallery</h2>
+<p className="title-kr">갤러리</p>
 
 
 
