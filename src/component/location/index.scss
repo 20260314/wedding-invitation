@@ -144,12 +144,7 @@
       font-size: 0.9rem;
       line-height: 1.9;
     }
-  }
-}
-
-
-//지피티가 줄 넣으라고 준 코드
-.location-info .line {
+    .line {
   width: 100%;
   height: 1px;
   background-color: var(--theme-color);
@@ -157,5 +152,8 @@
   /* 좌우에 딱 붙지 않게 하기 */
   margin: 0.5rem 0 1rem 0;  /* 위쪽 0.5rem, 아래 1rem 간격 */
   border-radius: 8px; /* 살짝 부드러운 느낌 */
+    }
+  }
 }
+
 
