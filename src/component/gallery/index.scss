@@ -251,105 +251,12 @@ $transition-duration: 0.3s;
 
 
 //지피티가 준 좌우 버튼 코드
-.photo-view-container {
-  position: relative;
+.nav-buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .photo-large {
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 12px;
-  }
-
-  .photo-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 12px;
-    background: rgba(0,0,0,0.25);
-    border-radius: 50%;
-    cursor: pointer;
-
-    .arrow {
-      width: 24px;
-      height: 24px;
-    }
-
-    &.left {
-      left: 10px;
-    }
-
-    &.right {
-      right: 10px;
-
-      .arrow {
-        transform: scaleX(-1); // 오른쪽 화살표 반전
-      }
-    }
-  }
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
-.more-wrapper {
-  position: relative;
-
-  .fade {
-    position: absolute;
-    bottom: 35px;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(to bottom, transparent, rgba(255,255,255,1));
-  }
-
-  .more-btn {
-    margin: 20px auto 0;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
-    .more-arrow {
-      width: 16px;
-      height: 16px;
-    }
-  }
-}
-
-
-.photo-view {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo-large {
-  max-width: 100%;
-  max-height: 80vh;
-  border-radius: 10px; //코너 라운드처리
-}
-
-.slide-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  border-radius: 999px;
-  padding: 8px;
-  border: none;
-  cursor: pointer;
-
-  &.left { left: 10px; }
-  &.right { right: 10px; }
-
-  .arrow {
-    width: 24px;
-    height: 24px;
-    color: white;
-  }
-
-  .arrow.right {
-    transform: rotate(180deg);
-  }
+.nav-buttons .arrow.right {
+  transform: scaleX(-1);
 }
