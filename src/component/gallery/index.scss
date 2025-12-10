@@ -268,7 +268,7 @@ $transition-duration: 0.3s;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.0);
   border-radius: 999px;
   padding: 8px;
   border: none;
@@ -278,9 +278,9 @@ $transition-duration: 0.3s;
   &.right { right: 10px; }
 
   .arrow {
-    width: 24px;
-    height: 24px;
-    color: white;
+    width: 28px;
+    height: 28px;
+    color: var(--title-color);
   }
 
   .arrow.right {
