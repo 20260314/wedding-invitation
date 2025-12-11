@@ -17,7 +17,6 @@ export const Information1 = () => {
         <br />
       저희는 축의금 대신 축하해주시는 마음만 소중히 받겠습니다.
         </div>
-      </div>
     </>
   )
 }
