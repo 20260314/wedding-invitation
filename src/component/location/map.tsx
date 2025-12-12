@@ -11,7 +11,8 @@ import {
   NMAP_PLACE_ID,
   WEDDING_HALL_POSITION,
 } from "../../const"
-import { NAVER_MAP_CLIENT_ID } from "../../env"
+//import { NAVER_MAP_CLIENT_ID } from "../../env"
+const NAVER_MAP_CLIENT_ID = import.meta.env.VITE_NAVER_MAP_CLIENT_ID //지피티가준거임
 
 export const Map = () => {
   return NAVER_MAP_CLIENT_ID ? <NaverMap /> : <div>Map is not available</div>
