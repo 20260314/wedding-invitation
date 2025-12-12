@@ -32,7 +32,7 @@ export const NMAP_PLACE_ID = 19083380
 // 카카오 지도의 웨딩홀 장소 ID
 // 카카오 지도 웹페이지에서 웨딩홀 검색 후 해당 장소에서 상세보기 클릭 시 URL에서 확인 가능.
 // 예: https://place.map.kakao.com/8634826 -> 8634826
-export const KMAP_PLACE_ID = 8634826
+export const KMAP_PLACE_ID = 10589873
 
 export const BRIDE_FULLNAME = "김봄"
 export const BRIDE_FIRSTNAME = "봄"
