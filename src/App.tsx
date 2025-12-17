@@ -3,7 +3,7 @@ import { Location } from "./component/location"
 import "./App.scss"
 import { Invitation } from "./component/invitation"
 import { Gallery } from "./component/gallery"
-import { Information } from "./component/information"
+import { EndingImage } from "./component/information"
 import { LazyDiv } from "./component/lazyDiv"
 import { ShareButton } from "./component/shareButton"
 import { STATIC_ONLY } from "./env"
@@ -18,12 +18,12 @@ function App() {
           </LazyDiv>
         
 <LazyDiv className="card-group">
-          {/* 모시는 글 */}
+          {/* 초대합니다 */}
           <Invitation />
         </LazyDiv>
         
  <LazyDiv className="card-group">
-          {/* 겔러리 */}
+          {/* 갤러리 */}
           <Gallery />
         </LazyDiv>
 
@@ -33,8 +33,8 @@ function App() {
         </LazyDiv>
 
         <LazyDiv className="card-group">
-          {/* 마음 전하기 */}
-          <Information />
+          {/* 엔딩 */}
+          <EndingImage />
         </LazyDiv>
         
         <ShareButton />
