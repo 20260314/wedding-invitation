@@ -30,6 +30,6 @@ export const GALLERY_IMAGES = [
   image12,
 ]
 
-export const COVER_IMAGE = {
+export const ENDING_IMAGE = {
   "ending1-2": ending12,
 }
