@@ -3,7 +3,8 @@ import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
 import ArrowLeft from "../../icons/angle-left-sm.svg?react"
 import { GALLERY_IMAGES } from "../../images"
-import Arrowdown from "../../icons/arrowdown.png"
+import Arrowdown from "../../icons/arrowdown1.png"
+import Arrowup from "../../icons/arrowup1.png"
 
 export const Gallery = () => {
   const { openModal } = useModal()
@@ -80,7 +81,7 @@ export const Gallery = () => {
       {/* --- 접기 --- */}
       {expanded && (
         <button className="less-btn" onClick={() => setExpanded(false)}>
-          접기 ↑
+          접기 <img src={Arrowup} alt="더보기" className="less-arrow" />
         </button>
       )}
     </LazyDiv>
