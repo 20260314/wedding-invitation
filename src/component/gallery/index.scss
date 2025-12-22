@@ -232,6 +232,13 @@ $transition-duration: 0.3s;
   }
 }
 
+ .less-btn img.less-arrow {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+
 /* 모달 내부 큰 이미지 보기 */
 .photo-view-modal {
   .photo-view {
