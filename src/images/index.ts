@@ -1,4 +1,4 @@
-import coverImage from "./cover.png"
+import coverImage from "./cover1.jpg"
 import photo1 from "./photo1.jpg"
 import image2 from "./image2.png"
 import image3 from "./image3.png"
