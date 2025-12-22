@@ -5,7 +5,6 @@ import { Invitation } from "./component/invitation"
 import { Gallery } from "./component/gallery"
 import { EndingImage } from "./component/information"
 import { LazyDiv } from "./component/lazyDiv"
-import { ShareButton } from "./component/shareButton"
 import { STATIC_ONLY } from "./env"
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
           <EndingImage />
         </LazyDiv>
         
-        <ShareButton />
       </div>
     </div>
   )
