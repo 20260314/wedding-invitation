@@ -5,9 +5,9 @@ export const EndingImage = () => {
   return (
     <LazyDiv className="ending">
       <div className="image-wrapper">
-        //<img
-          //src={ENDING_IMAGE["ending1-2"]}
-          //alt="ending image"
+        <img
+          src={ENDING_IMAGE["ending3-2"]}
+          alt="ending image"
         />
       </div>
    </LazyDiv>
