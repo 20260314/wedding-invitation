@@ -30,7 +30,7 @@ export const Invitation = () => {
       <div className="content">영원히 함께할 미래를</div>
       <div className="content">그리게 되었습니다.</div>
       <div className="break" />
-      <div className="content">서로 사랑하고 아껴주는</div>
+      <div className="content">서로 아껴주고 기댈 수 있는</div>
       <div className="content">사랑스러운 한 팀이 되어</div>
       <div className="content">여호와를 섬기고자 합니다.</div>
       <div className="break" />
