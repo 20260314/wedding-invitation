@@ -9,11 +9,11 @@ export const Notice = () => {
          <h2 className="english">Notice</h2>
            <p className="title-kr">안내 말씀</p>
           <br />
-          <br />
           왕국회관에서 열리는 결혼식이기 때문에,
           <br />
           현장에는 축의대가 마련되어 있지 않습니다.
           <br />
+           <br />
           언제나 저희 두 사람에게
           <br />
           사랑과 관심을 나타내 주셔서 감사드립니다.
