@@ -3,6 +3,7 @@ import { Location } from "./component/location"
 import "./App.scss"
 import { Invitation } from "./component/invitation"
 import { Gallery } from "./component/gallery"
+import { Notice } from "./component/information"
 import { EndingImage } from "./component/information"
 import { LazyDiv } from "./component/lazyDiv"
 import { STATIC_ONLY } from "./env"
@@ -29,6 +30,11 @@ function App() {
         <LazyDiv className="card-group">
           {/* 오시는길 */}
           <Location />
+        </LazyDiv>
+
+         <LazyDiv className="card-group">
+          {/* 안내 말씀 */}
+          <Notice />
         </LazyDiv>
 
         <LazyDiv className="card-group">
