@@ -7,7 +7,6 @@ export const Notice = () => {
       <div className="notice">
         <div className="notice-card">
          <h2 className="english">Notice</h2>
-          <br />
            <p className="title-kr">안내 말씀</p>
           <br />
           <br />
