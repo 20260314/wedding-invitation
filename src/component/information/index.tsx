@@ -1,6 +1,29 @@
 import { LazyDiv } from "../lazyDiv"
 import { ENDING_IMAGE } from "../../images"
 
+export const Notice = () => {
+  return (
+    <LazyDiv className="card notice">
+      <div className="notice">
+        <div className="notice-card">
+         <h2 className="english">Notice</h2>
+          <br />
+           <p className="title-kr">안내 말씀</p>
+          <br />
+          <br />
+          왕국회관에서 열리는 결혼식이기 때문에,
+          <br />
+          현장에는 축의대가 마련되어 있지 않습니다.
+          <br />
+          언제나 저희 두 사람에게
+          <br />
+          사랑과 관심을 나타내 주셔서 감사드립니다.
+        </div>
+      </div>
+    </LazyDiv>
+  )
+}
+
 export const EndingImage = () => {
   return (
     <LazyDiv className="ending">
