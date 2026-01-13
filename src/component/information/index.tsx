@@ -17,6 +17,9 @@ export const Notice = () => {
           언제나 저희 두 사람에게
           <br />
           사랑과 관심을 나타내 주셔서 감사드립니다.
+          <br />
+          <br />
+          신랑 황재윤, 신부 김봄 올림
         </div>
       </div>
     </LazyDiv>
