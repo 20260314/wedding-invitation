@@ -76,6 +76,6 @@
 /* 모달 열릴 때 body 스크롤 완전 차단 */
 body.modal-open {
   overflow: hidden;
-  position: fixed;
-  width: 100%;
+  touch-action: none;
+  overscroll-behavior: none;
 }
