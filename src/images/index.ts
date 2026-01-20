@@ -15,7 +15,6 @@ import photo13 from "./photo13.JPG"
 import photo14 from "./photo14.JPG"
 import photo15 from "./photo15.JPG"
 import photo16 from "./photo16.JPG"
-import image17 from "./image17.png"
 import photo18 from "./photo18.JPG"
 import ending32 from "./ending3-2.JPG"
 
@@ -38,7 +37,6 @@ export const GALLERY_IMAGES = [
   photo14,
   photo15,
   photo16,
-  image17,
   photo18,
 ]
 
