@@ -17,8 +17,17 @@ export const Gallery = () => {
   // ===============================
   const PhotoViewer = ({ startIndex }: { startIndex: number }) => {
     const [index, setIndex] = useState(startIndex)
+    const [isAnimating, setIsAnimating] = useState(false)
     const touchStartX = useRef<number | null>(null)
     const THRESHOLD = 60 // ← 이 정도 밀어야 넘어감
+    const DURATION = 250 // ← 슬라이드 체감 속도 (ms)
+
+    const move = (nextIndex: number) => {
+    if (isAnimating) return
+    setIsAnimating(true)
+    setIndex(nextIndex)
+    setTimeout(() => setIsAnimating(false), DURATION)
+  }
 
     const prev = (e?: React.SyntheticEvent) => {
       e?.stopPropagation()
