@@ -2,7 +2,7 @@ import coverImage from "./cover1.jpg"
 import photo1 from "./photo1.JPG"
 import photo2 from "./photo2.JPG"
 import photo3 from "./photo3.JPG"
-import photo4 from "./photo4.JPG"
+import image4 from "./image4.png"
 import photo5 from "./photo5.JPG"
 import photo6 from "./photo6.JPG"
 import photo7 from "./photo7.JPG"
@@ -15,7 +15,7 @@ import photo13 from "./photo13.JPG"
 import photo14 from "./photo14.JPG"
 import photo15 from "./photo15.JPG"
 import photo16 from "./photo16.JPG"
-import photo17 from "./photo17.JPG"
+import image17 from "./image17.png"
 import photo18 from "./photo18.JPG"
 import ending32 from "./ending3-2.JPG"
 
@@ -25,7 +25,7 @@ export const GALLERY_IMAGES = [
   photo1,
   photo2,
   photo3,
-  photo4,
+  image4,
   photo5,
   photo6,
   photo7,
@@ -38,7 +38,7 @@ export const GALLERY_IMAGES = [
   photo14,
   photo15,
   photo16,
-  photo17,
+  image17,
   photo18,
 ]
 
