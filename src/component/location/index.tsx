@@ -60,7 +60,7 @@ export const Location = () => {
           <div className="heading">온라인</div>
           <div class="line"></div>
           <div className="content">
-            줌 (ZOOM) 으로도 결혼식이 생중계됩니다.
+            줌 (ZOOM) 으로도 결혼식 프로그램이 중계됩니다.
             <br />
             회의 ID: 823 6639 8235
             <br />
