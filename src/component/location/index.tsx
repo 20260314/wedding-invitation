@@ -16,7 +16,7 @@ export const Location = () => {
           {LOCATION}
           <div className="detail">{LOCATION_ADDRESS}</div>
         </div>
-      //<div className="phone">📞 010-1234-5678</div>
+        {/* <div className="phone">📞 010-1234-5678</div> */}
         <Map />
       </LazyDiv>
 
