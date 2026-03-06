@@ -62,7 +62,7 @@ export const Location = () => {
           <div className="content">
             줌 (ZOOM) 으로도 결혼식 프로그램이 중계됩니다.
             <br />
-            회의 ID: 823 6639 8235
+            회의 ID: 306 388 3010
             <br />
             암호: 0314
           </div>
